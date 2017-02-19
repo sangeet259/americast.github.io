@@ -1,6 +1,6 @@
 # Personal Website
 ------------------
-YET TO BE IMPLEMENTED
+WORK IN PROGRESS
 ------------------
 
 Github page
