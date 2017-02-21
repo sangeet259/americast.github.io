@@ -1,0 +1,155 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+    display: none !important;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    /*overflow: hidden;*/
+}
+
+
+/* Vertical centering */
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.content-child {
+    flex: 0 0 100%;
+    align-self: center;
+}
+
+.vertical-center {
+    min-height: 100%;
+    /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh;
+    /* These two lines are counted as one :-)       */
+    display: flex;
+    align-items: center;
+}
+
+
+/* Main text styling */
+
+#MainTitle {
+    font-family: junction regular;
+    z-index: 999;
+    position: relative;
+    color: white;
+    font-weight: 10;
+    font-size: 2vh;
+}
+
+
+/* Page animations */
+
+.ng-enter {
+    z-index: 8888;
+}
+
+.ng-leave {
+    z-index: 9999;
+}
+
+
+/* Page styling */
+
+.page-home {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.page-about {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.page-projects {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.page-home.ng-enter {
+    -webkit-animation: scaleUp 1.4s ease both;
+    animation: scaleUp 1.4s ease both;
+}
+
+.page-home.ng-leave {
+    -webkit-animation: scaleDown 1.4s ease both;
+    animation: scaleDown 1.4s ease both;
+}
+
+.page-about.ng-enter {
+    -webkit-animation: moveFromBottom 1.2s ease both;
+    animation: moveFromBottom 1.2s ease both;
+}
+
+.page-about.ng-leave {
+    -webkit-animation: moveToBottom 1.2s ease both;
+    animation: moveToBottom 1.2s ease both;
+}
+
+.page-projects.ng-enter {
+    -webkit-animation: moveFromBottom 1.2s ease both;
+    animation: moveFromBottom 1.2s ease both;
+}
+
+.page-projects.ng-leave {
+    -webkit-animation: moveToBottom 1.2s ease both;
+    animation: moveToBottom 1.2s ease both;
+}
+
+
+/* Loader */
+
+resolve-loader {
+    z-index: 999;
+    color: white;
+    font-size: 3vh;
+}
+
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    display: none;
+}

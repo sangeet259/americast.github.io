@@ -1,0 +1,35 @@
+.redpink {
+    background: #ff0000;
+    background: -webkit-linear-gradient(left top, #ff0000, #ff148a);
+    background: -moz-linear-gradient(left top, #ff0000, #ff148a);
+    background: -ms-linear-gradient(left top, #ff0000, #ff148a);
+    background: -o-linear-gradient(left top, #ff0000, #ff148a);
+    background: linear-gradient(to bottom right, #ff0000, #ff148a);
+}
+
+.navyteal {
+    background: #001f3f;
+    background: -webkit-linear-gradient(left top, #001f3f, #00f0f0);
+    background: -moz-linear-gradient(left top, #001f3f, #00f0f0);
+    background: -ms-linear-gradient(left top, #001f3f, #00f0f0);
+    background: -o-linear-gradient(left top, #001f3f, #00f0f0);
+    background: linear-gradient(to bottom right, #001f3f, #00f0f0);
+}
+
+.orangeyellow {
+    background: #ff521b;
+    background: -webkit-linear-gradient(left top, #ff521b, #ffdc00);
+    background: -moz-linear-gradient(left top, #ff521b, #ffdc00);
+    background: -ms-linear-gradient(left top, #ff521b, #ffdc00);
+    background: -o-linear-gradient(left top, #ff521b, #ffdc00);
+    background: linear-gradient(to bottom right, #ff521b, #ffdc00);
+}
+
+.maroonpurple {
+    background: #85144b;
+    background: -webkit-linear-gradient(left top, #85144b, #c10edb);
+    background: -moz-linear-gradient(left top, #85144b, #c10edb);
+    background: -ms-linear-gradient(left top, #85144b, #c10edb);
+    background: -o-linear-gradient(left top, #85144b, #c10edb);
+    background: linear-gradient(to bottom right, #85144b, #c10edb);
+}

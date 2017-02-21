@@ -1,0 +1,231 @@
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-orientation-override.css">
+<link rel="stylesheet" type="text/css" href="css/ionicons.css">
+<link rel="stylesheet" type="text/css" href="css/parallaxnav.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<style>
+@import 'https://fonts.googleapis.com/css?family=Fjalla+One|Kaushan+Script|Open+Sans|Oswald|Pacifico|Poppins';
+</style>
+<style type="text/css">
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+    display: none !important;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.row {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.all-content {
+    background-color: #FFDC00;
+    position: absolute;
+    top: 0;
+}
+
+
+/*.caption {
+    width: 100%;
+    bottom: .3rem;
+    bottom: 0;
+    position: absolute;
+    background: #000;
+    background: -webkit-linear-gradient(bottom, #000 40%, rgba(0, 0, 0, 0) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: -moz-linear-gradient(bottom, #000 40%, rgba(0, 0, 0, 0) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: -o-linear-gradient(bottom, #000 40%, rgba(0, 0, 0, 0) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: linear-gradient(to top, #000 40%, rgba(0, 0, 0, 0) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.thumbnail {
+    border: 0 none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    background-color: black;
+}
+
+.caption text {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 5vh;
+}*/
+
+.fitdiv {
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+}
+
+.not-visible {
+    visibility: hidden;
+}
+
+.small-logo-container a {
+    font-family: 'Pacifico', cursive;
+}
+
+.big-logo-container h1 {
+    font-family: 'Pacifico', cursive;
+}
+
+.navbar {
+    width: 100%;
+    text-align: center;
+}
+
+#projectsback {
+    position: relative;
+    margin-top: 2vh;
+    left: 0;
+    right: 0;
+}
+
+#projectswelcome {
+    position: relative;
+    margin-top: 3vh;
+    left: 0;
+    right: 0;
+}
+
+.row.masonry-container {
+    width: 100vw;
+}
+
+.projectbox .jumbotron {
+    font-family: 'Open Sans', sans-serif;
+    padding: 2vh 2vw 0 2vw;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+#githubicon {
+    color: #FFF;
+}
+
+#githubicon:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#githubicon.hideicon {
+    color: rgba(0, 0, 0, 0);
+}
+
+#githubicon.hideicon:hover {
+    color: rgba(0, 0, 0, 0);
+    cursor: default;
+}
+
+.projdescbox {
+    background: rgba(0, 0, 0, 0.2);
+    margin: 1vh -2vw 1vh -2vw;
+    padding: 1.5vh 2vw 1.5vh 2vw;
+    box-shadow: inset 0px 9px 8px -10px #111, inset 0px -9px 8px -10px #111;
+}
+</style>
+
+<body>
+    <div class="all-content" id="projectscontainer" ng-controller="projectsController" ng-cloak="" ng-app="ghostPS">
+        <div class="row visible-xs visible-sm" id="projectsback">
+            <div class="col-xs-12 text-center" style="z-index: 10;">
+                <i class="icon ion-ios-arrow-up" style="color: #111;font-size: 8vh;" ng-click='goNext("/")'></i>
+            </div>
+        </div>
+        <div class="row" id="projectswelcome">
+            <div class="visible-md visible-lg col-xs-0 col-md-1 text-right">
+                <i class="icon ion-ios-arrow-up" style="color: #111;font-size: 8vh;" ng-click='goNext("/")'></i>
+            </div>
+        </div>
+        <!-- Fixed navbar -->
+        <div class="visible-xs visible-sm navbar navbar-inverse navbar-fixed-top" style="z-index: 2;" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <div class="small-logo-container">
+                        <a class="small-logo">Contact me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="big-logo-row">
+            <div class="row">
+                <div class="col-xs-12 big-logo-container">
+                    <h1 class="big-logo">Contact me</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-offset-1 col-xs-10">
+                <hr style="border: none;height: 2px;color: #fff;background-color: #fff;">
+            </div>
+        </div>
+        <div class="row masonry-container">
+            <div class="projectbox col-xs-12 col-md-6 animated zoomIn" when-visible="animateElementIn">
+                <div class="jumbotron" style="background: #39CCCC;color: white;">
+                    <div class="projlinks">
+                        <div class="col-xs-offset-10 col-xs-2 text-right"><a href='' target="_blank" style="target-new: tab;"><i id="githubicon" class="icon ion-social-github hideicon" style="position: relative;font-size: 4vh;z-index: 2;"></i></a></div>
+                    </div>
+                    <div class="projdetails" style="position: relative;top: -4.5vh;z-index: 1;">
+                        <br>
+                        <text style="font-size: 4vh;">E-Mail</text>
+                        <div class="projdescbox">sayan.sinha@iitkgp.ac.in
+                            <br>contact@sayansinha.tk
+                        </div>
+                        <text style="font-size: 2vh;" /text>
+                    </div>
+                </div>
+            </div>
+            <div class="projectbox col-xs-12 col-md-6 animated zoomIn" when-visible="animateElementIn">
+                <div class="jumbotron" style="background: #39CCCC;color: white;">
+                    <div class="projlinks">
+                        <div class="col-xs-offset-10 col-xs-2 text-right"><a href='https://github.com/americast' target="_blank" style="target-new: tab;"><i id="githubicon" class="icon ion-social-github" style="position: relative;font-size: 4vh;z-index: 2;"></i></a></div>
+                    </div>
+                    <div class="projdetails" style="position: relative;top: -4.5vh;z-index: 1;">
+                        <br>
+                        <text style="font-size: 4vh;">Github</text>
+                        <div class="projdescbox">github.com/americast
+                        <br><br> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    var $container = $('.masonry-container');
+    $container.imagesLoaded(function() {
+        $container.masonry({
+            columnWidth: '.projectbox',
+            itemSelector: '.projectbox'
+        });
+    });
+    </script>
+</body>

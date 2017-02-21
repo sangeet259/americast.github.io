@@ -1,0 +1,210 @@
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-orientation-override.css">
+<link rel="stylesheet" type="text/css" href="css/ionicons.css">
+<style>
+@import 'https://fonts.googleapis.com/css?family=Fjalla+One|Kaushan+Script|Open+Sans|Oswald|Pacifico|Poppins';
+</style>
+<style type="text/css">
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+    display: none !important;
+}
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+.row {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.all-content {
+    height: 100%;
+    background: url(img/aboutbg/dlanham-Cardinal.jpg) no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+#aboutback {
+    position: relative;
+    margin-top: 2vh;
+    left: 0;
+    right: 0;
+}
+
+#aboutwelcome {
+    position: relative;
+    margin-top: 3vh;
+    left: 0;
+    right: 0;
+}
+
+#abouttitle {
+    position: relative;
+    margin-top: 2vh;
+    left: 0;
+    right: 0;
+}
+
+#aboutdescdesk {
+    position: relative;
+    margin-top: 2vh;
+    left: 0;
+    right: 0;
+}
+
+#aboutdescmob {
+    position: relative;
+    margin-top: 32vh;
+    left: 0;
+    right: 0;
+}
+
+#aboutimg {
+    position: relative;
+    margin-top: 5vh;
+    left: 0;
+    right: 0;
+}
+
+#iconlinks {
+    position: relative;
+    margin-top: 5vh;
+    left: 0;
+    right: 0;
+}
+
+#namaste text {
+    color: #111;
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 8vh;
+}
+
+#intro text {
+    color: #111;
+    font-family: 'Fjalla One', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.fitdiv {
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+}
+
+i {
+    padding: 2vh;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+#githubicon {
+    color: #111;
+}
+#linkedinicon {
+    color: #111;
+}
+#facebookicon{
+    color: #111;
+}
+#blogicon{
+    color: #111;
+}
+#instaicon{
+    color: #111;
+}
+#mailicon{
+    color: #111;
+}
+#githubicon:hover {
+    color: #4183c4;
+}
+#linkedinicon:hover {
+    color: #0077b5;
+}
+#facebookicon:hover{
+    color: #3b5998;
+}
+#blogicon:hover{
+    color: #f57d00;
+}
+#instaicon:hover{
+    color: #9b6954;
+}
+#mailicon:hover{
+    color: #dd4b39;
+}
+</style>
+
+<body>
+    <div class="all-content" ng-controller="aboutController" ng-cloak="" ng-app="ghostPS">
+        <div class="row visible-xs visible-sm" id="aboutback">
+            <div class="col-xs-12 text-center">
+                <i class="icon ion-ios-arrow-up" style="color: #111;font-size: 8vh;" ng-click='goNext("/")'></i>
+            </div>
+        </div>
+        <div class="row" id="aboutwelcome">
+            <div class="visible-md visible-lg col-xs-0 col-md-1 text-right">
+                <i class="icon ion-ios-arrow-up" style="color: #111;font-size: 8vh;" ng-click='goNext("/")'></i>
+            </div>
+        </div>
+        <div class="row" id="abouttitle" style="top: -4vh;">
+            <div class="col-xs-12 col-md-offset-7 col-md-4 text-center" id="intro">
+                <text style="font-size: 8vh;">Hi, I'm Sayan...</text>
+            </div>
+        </div>
+        <div class="row visible-md visible-lg" id="aboutdescdesk">
+            <div class="col-xs-12 col-md-offset-7 col-md-4 text-center" id="intro">
+                <text style="font-size: 3vh;">I am a first year undergrad at the Indian Institute of Technology Kharagpur. I am an open-source enthusiast who wishes to make significant contributions in the form of code.</text>
+            </div>
+        </div>
+        <div class="row visible-xs visible-sm" id="aboutdescmob">
+            <div class="col-xs-12 col-md-offset-6 col-md-6 text-center" id="intro">
+                <text style="font-size: 2.5vh;">I am a first year student at the Indian Institute of Technology Kharagpur. I am an open-source enthusiast who wishes to make significant contributions in the form of code. </text>
+            </div>
+        </div>
+        <div class="row visible-md visible-lg" id="aboutimg">
+            <div class="col-xs-12 col-md-offset-7 col-md-4 text-center" id="profileimg">
+                <img src="img/about-bw.jpeg" alt="Me!" class="img-thumbnail" style="max-height: 30vh;width: auto;">
+            </div>
+        </div>
+        <div class=row id="iconlinks">
+            <div class="col-xs-12 col-md-offset-7 col-md-4 text-center">
+                <a href='https://github.com/americast/' target="_blank" style="target-new: tab;"
+><i id="githubicon" class="icon ion-social-github" style="font-size: 5vh;"></i></a>
+                <a href='http://ghostwriternr.me/blog/' target="_blank" style="target-new: tab;"><i id="blogicon" class="icon ion-edit" style="font-size: 5vh;"></i></a>
+                <a href='mailto:sayan.sinha@iitkgp.ac.in' target="_blank" style="target-new: tab;"><i id="mailicon" class="icon ion-ios-email" style="font-size: 5vh;"></i></a>
+            </div>
+        </div>
+</body>

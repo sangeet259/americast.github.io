@@ -1,0 +1,73 @@
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<style>
+@import 'https://fonts.googleapis.com/css?family=Fjalla+One|Kaushan+Script|Open+Sans|Oswald|Pacifico|Poppins';
+</style>
+<style type="text/css">
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+    display: none !important;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.row {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#MainTitle {
+    font-family: 'Open Sans', sans-serif;
+}
+</style>
+<div class="content-child vertical-center" ng-controller="mainController">
+    <div class="row">
+        <div class="row">
+            <div show-during-resolve class="sk-folding-cube text-center">
+                <div class="sk-cube1 sk-cube"></div>
+                <div class="sk-cube2 sk-cube"></div>
+                <div class="sk-cube4 sk-cube"></div>
+                <div class="sk-cube3 sk-cube"></div>
+            </div>
+            <h2 show-during-resolve class="text-center">LOADING</h2>
+        </div>
+        <div class="col-xs-12 col-md-6 vcenter">
+            <div hide-during-resolve id="mainrow" class="row">
+                <div class="col-xs-12 col-md-offset-2 col-md-10">
+                    <div id="MainTitle">
+                        <p style="font-size: 6vh;">Sayan Sinha</p>
+                        <p style="font-size: 4vh;">First year student at IIT Kharagpur</p>
+                        <br/>
+                        <section>
+                            <nav class="cl-effect">
+                                <a href="#about"><span data-hover="About">About</span></a>
+                                <a href="http://americast.github.io/blog/" target="_blank"><span data-hover="Blog">Blog</span></a>
+                                <a href="#contact"><span data-hover="Contact">Contact</span></a>
+                                
+                            </nav>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-0 col-md-6 vcenter">
+        </div>
+    </div>
+</div>
