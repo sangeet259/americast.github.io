@@ -32,11 +32,9 @@ for each_feed in feed["entries"]:
 
 	post_here=post_here.replace('{<subtitle>}',subtitle.decode('utf-8'))
 	all_posts+=post_here
-f=open("first_index.tmpl","r")
-all_posts=f.read()+all_posts
-f.close()
-f=open("last_index.tmpl","r")
-all_posts+=f.read()
+f=open("index.html","r")
+org_html=f.read()
+all_posts=org_html.decode('utf-8').split("<!--New posts here -->")[0]+"\n<!--New posts here -->\n"+all_posts+org_html.decode('utf-8').split("<!--New posts here -->")[1]
 f.close()
 f=open("index.html","w")
-f.write(all_posts.encode('utf-8'))
+f.write(all_posts)
